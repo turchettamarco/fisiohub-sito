@@ -5,6 +5,7 @@ const conditions = [
   {
     emoji: "🔙",
     title: "Mal di schiena e lombalgia",
+    href: "/mal-di-schiena-pontecorvo",
     description:
       "Il dolore lombare è la prima causa di disabilità nel mondo. Può essere acuto (da uno sforzo improvviso) o cronico (anni di tensioni accumulate). In entrambi i casi, la causa può essere trovata e trattata.",
     keywords: ["ernia del disco", "colpo della strega", "lombalgia cronica", "sciatica"],
@@ -12,6 +13,7 @@ const conditions = [
   {
     emoji: "🦴",
     title: "Cervicale e dolore al collo",
+    href: "/cervicale-pontecorvo",
     description:
       "Rigidità mattutina, dolore che sale alla testa, formicolio alle braccia. La cervicalgia moderna è spesso alimentata da posture prolungate allo schermo e tensioni fasciali — non è una condanna permanente.",
     keywords: ["cervicalgia", "cefalea tensiva", "ernia cervicale", "torcicollo"],
@@ -19,6 +21,7 @@ const conditions = [
   {
     emoji: "💫",
     title: "Sciatalgia",
+    href: "/sciatalgia-pontecorvo",
     description:
       "Il dolore che parte dalla schiena e scende lungo la gamba può essere debilitante. Non tutte le sciatiche vengono dall'ernia: il piriforme, le faccette articolari, la muscolatura profonda possono essere responsabili.",
     keywords: ["nervo sciatico", "cruralgia", "dolore all'anca", "formicolio alla gamba"],
@@ -26,6 +29,7 @@ const conditions = [
   {
     emoji: "💪",
     title: "Spalla: dolore e blocco",
+    href: "/dolore-spalla-pontecorvo",
     description:
       "Spalla congelata, lesione della cuffia dei rotatori, tendinite del sovraspinato, impingement: ogni condizione richiede un approccio diverso. Tratto sia la fase acuta che il recupero funzionale completo.",
     keywords: ["capsulite adesiva", "cuffia dei rotatori", "calcificazione", "impingement"],
@@ -33,6 +37,7 @@ const conditions = [
   {
     emoji: "🦵",
     title: "Ginocchio: infortuni e recupero",
+    href: "/dolore-ginocchio-pontecorvo",
     description:
       "Dal dolore anteriore (sindrome femoro-rotulea) alla riabilitazione post-chirurgica (LCA, menisco, protesi), il ginocchio richiede un lavoro progressivo e misurato per tornare a funzionare bene.",
     keywords: ["LCA", "menisco", "protesi ginocchio", "sindrome femoro-rotulea"],
@@ -40,6 +45,7 @@ const conditions = [
   {
     emoji: "🏃",
     title: "Infortuni sportivi",
+    href: "/fisioterapia-sportiva-pontecorvo",
     description:
       "Distorsioni, lesioni muscolari, tendinopatie, fratture da stress. Lavoro con sportivi di ogni livello per tornare all'attività nel minor tempo possibile, con la struttura rafforzata per evitare recidive.",
     keywords: ["distorsione caviglia", "stiramento", "tendinite achillea", "fascite plantare"],
@@ -47,6 +53,7 @@ const conditions = [
   {
     emoji: "🔧",
     title: "Riabilitazione post-operatoria",
+    href: "/fisioterapia-pontecorvo",
     description:
       "Dopo un intervento chirurgico ogni settimana conta. Un percorso riabilitativo strutturato accelera i tempi, previene le complicanze (fibrosi, atrofia muscolare) e massimizza il risultato dell'operazione.",
     keywords: ["protesi anca", "protesi ginocchio", "riabilitazione spalla", "post-artroscopia"],
@@ -54,6 +61,7 @@ const conditions = [
   {
     emoji: "🧘",
     title: "Postura e dolori cronici",
+    href: "/postura-pontecorvo",
     description:
       "Dolori che migrano, che non hanno una causa chiara su RMN o TAC, che cambiano con lo stress. Spesso sono il segnale di squilibri posturali globali che il metodo Mézières e l'osteopatia affrontano in profondità.",
     keywords: ["scoliosi", "iperlordosi", "cifosi", "dolore cronico"],
@@ -82,14 +90,15 @@ export function PainConditions() {
         {/* Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {conditions.map((cond) => (
-            <div
+            <Link
               key={cond.title}
-              className="group bg-card rounded-2xl border border-border p-6 hover:border-primary/40 hover:shadow-md transition-all duration-200"
+              href={cond.href}
+              className="group bg-card rounded-2xl border border-border p-6 hover:border-primary/40 hover:shadow-md transition-all duration-200 block"
             >
               {/* Emoji icon */}
               <div className="text-3xl mb-4">{cond.emoji}</div>
 
-              <h3 className="font-semibold text-foreground mb-2 leading-snug">
+              <h3 className="font-semibold text-foreground mb-2 leading-snug group-hover:text-primary transition-colors">
                 {cond.title}
               </h3>
 
@@ -98,7 +107,7 @@ export function PainConditions() {
               </p>
 
               {/* Keyword tags */}
-              <div className="flex flex-wrap gap-1.5">
+              <div className="flex flex-wrap gap-1.5 mb-3">
                 {cond.keywords.map((kw) => (
                   <span
                     key={kw}
@@ -108,7 +117,10 @@ export function PainConditions() {
                   </span>
                 ))}
               </div>
-            </div>
+              <span className="text-xs font-semibold text-primary flex items-center gap-1 group-hover:gap-2 transition-all">
+                Scopri di più <ArrowRight className="h-3 w-3" />
+              </span>
+            </Link>
           ))}
         </div>
 

@@ -7,11 +7,12 @@ import { Menu, X, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const navLinks = [
-  { href: "#chi-sono", label: "Chi Sono" },
-  { href: "#servizi", label: "Servizi" },
-  { href: "#metodo", label: "Come Lavoro" },
-  { href: "#studio", label: "Studio" },
-  { href: "#contatti", label: "Contatti" },
+  { href: "/", label: "Home" },
+  { href: "/#chi-sono", label: "Chi Sono" },
+  { href: "/#servizi", label: "Servizi" },
+  { href: "/#metodo", label: "Come Lavoro" },
+  { href: "/#studio", label: "Studio" },
+  { href: "/#contatti", label: "Contatti" },
 ]
 
 export function Header() {

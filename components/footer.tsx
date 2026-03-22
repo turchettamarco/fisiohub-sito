@@ -3,11 +3,12 @@ import Image from "next/image"
 import { MapPin, Phone, Mail } from "lucide-react"
 
 const navLinks = [
-  { href: "#chi-sono", label: "Chi Sono" },
-  { href: "#servizi", label: "Servizi" },
-  { href: "#metodo", label: "Come Lavoro" },
-  { href: "#studio", label: "Studio" },
-  { href: "#contatti", label: "Contatti" },
+  { href: "/", label: "Home" },
+  { href: "/#chi-sono", label: "Chi Sono" },
+  { href: "/#servizi", label: "Servizi" },
+  { href: "/#metodo", label: "Come Lavoro" },
+  { href: "/#studio", label: "Studio" },
+  { href: "/#contatti", label: "Contatti" },
   { href: "/prenota", label: "Prenota Online" },
 ]
 
@@ -82,6 +83,18 @@ export function Footer() {
                 >
                   turchettamarco@gmail.com
                 </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <Mail className="h-4 w-4 text-background/35 flex-shrink-0" />
+                <a
+                  href="mailto:m.turchetta@pec.it"
+                  className="text-sm text-background/60 hover:text-background transition-colors"
+                >
+                  m.turchetta@pec.it
+                </a>
+              </div>
+              <div className="pt-1">
+                <p className="text-xs text-background/30">P.IVA IT03195120609</p>
               </div>
             </div>
           </div>
