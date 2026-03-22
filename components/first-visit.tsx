@@ -5,31 +5,26 @@ const steps = [
   {
     icon: MessageSquare,
     title: "Ti ascolto — senza fretta",
-    duration: "15–20 min",
     desc: "Racconto la tua storia clinica, quando è iniziato il dolore, cosa lo peggiora, cosa hai già provato. Non mi fermo al problema attuale.",
   },
   {
     icon: Search,
     title: "Valutazione clinica obiettiva",
-    duration: "20–25 min",
     desc: "Test di mobilità, test ortopedici e neurologici specifici per la tua condizione. Non mi fermo dove fa male: cerco la causa.",
   },
   {
     icon: Lightbulb,
     title: "Ti spiego cosa ho trovato",
-    duration: "10 min",
     desc: "Capire cosa sta succedendo al tuo corpo non è solo rassicurante — accelera la guarigione. I pazienti informati guariscono più in fretta.",
   },
   {
     icon: FileText,
     title: "Proposta di trattamento",
-    duration: "5 min",
     desc: "Ti propongo il piano: tecniche, numero di sedute, frequenza. Tutto trasparente. Decidi tu se procedere.",
   },
   {
     icon: CalendarCheck,
     title: "Primo trattamento (se sei d'accordo)",
-    duration: "15–20 min",
     desc: "Se utile, iniziamo già nella prima seduta. In molti casi i pazienti escono con meno dolore di quando sono entrati.",
   },
 ]
@@ -91,11 +86,8 @@ export function FirstVisit() {
                   <s.icon className="h-5 w-5 text-primary" />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <div className="flex items-center gap-2 mb-1 flex-wrap">
+                  <div className="flex items-center gap-2 mb-1">
                     <h3 className="font-semibold text-foreground text-sm">{s.title}</h3>
-                    <span className="text-[10px] font-semibold text-primary/70 bg-primary/8 px-2 py-0.5 rounded-full whitespace-nowrap">
-                      {s.duration}
-                    </span>
                   </div>
                   <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
                 </div>
