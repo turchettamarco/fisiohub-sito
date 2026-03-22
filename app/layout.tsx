@@ -1,4 +1,7 @@
 import React from "react"
+import { Header } from "@/components/header"
+import { Footer } from "@/components/footer"
+import { WhatsappFab } from "@/components/whatsapp-fab"
 import type { Metadata } from 'next'
 import { DM_Sans, Fraunces } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
@@ -165,7 +168,10 @@ export default function RootLayout({
         />
       </head>
       <body className={`${dmSans.variable} ${fraunces.variable} font-sans antialiased`}>
+        <Header />
         {children}
+        <Footer />
+        <WhatsappFab />
         <Analytics />
       </body>
     </html>
