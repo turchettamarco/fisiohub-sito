@@ -1,18 +1,18 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, MessageCircle, Star, CheckCircle } from "lucide-react"
+import { ArrowRight, MessageCircle, Star, CheckCircle, Phone } from "lucide-react"
 
 const bullets = [
-  "Trattamento basato sulla causa, non solo sul sintomo",
-  "Fisioterapia e osteopatia integrate in un unico percorso",
-  "Sedute dedicate — sei l'unico paziente in trattamento",
+  "Prima valutazione completa: 60 minuti, solo per te",
+  "Fisioterapia e osteopatia integrate — un percorso, non mille specialisti",
+  "Tecnologia laser Nd:YAG che arriva dove altri trattamenti non arrivano",
 ]
 
 const stats = [
-  { value: "10+", label: "Anni di esperienza" },
-  { value: "D.O.", label: "Diploma in Osteopatia (in corso)" },
-  { value: "5 ★", label: "Recensioni Google" },
+  { value: "10+", label: "Anni di esperienza clinica" },
+  { value: "⚽", label: "Ex fisioterapista Frosinone Calcio" },
+  { value: "5 ★", label: "Valutazione Google" },
 ]
 
 export function Hero() {
@@ -21,20 +21,13 @@ export function Hero() {
       className="relative flex flex-col"
       style={{ background: "linear-gradient(135deg, #0b2d2a 0%, #0f3d37 50%, #0d3530 100%)" }}
     >
-      {/* Dot pattern */}
       <div
         className="absolute inset-0 opacity-[0.06]"
-        style={{
-          backgroundImage: "radial-gradient(circle, white 1px, transparent 1px)",
-          backgroundSize: "28px 28px",
-        }}
+        style={{ backgroundImage: "radial-gradient(circle, white 1px, transparent 1px)", backgroundSize: "28px 28px" }}
       />
 
-      {/* Main content */}
       <div className="relative mx-auto max-w-7xl w-full px-4 sm:px-6 lg:px-8 pt-24 sm:pt-28 lg:pt-32 pb-10 sm:pb-14">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-
-          {/* ── Copy ── */}
           <div>
             {/* Badge */}
             <div
@@ -42,26 +35,26 @@ export function Hero() {
               style={{ background: "rgba(94,234,212,0.12)", border: "1px solid rgba(94,234,212,0.25)", color: "#5eead4" }}
             >
               <span className="w-1.5 h-1.5 rounded-full animate-pulse flex-shrink-0" style={{ background: "#5eead4" }} />
-              Fisioterapista &amp; Osteopata — Pontecorvo (FR)
+              Studio a Pontecorvo (FR) — Via Galileo Galilei 5
             </div>
 
-            {/* Headline */}
+            {/* H1 — esatto come richiesto */}
             <h1
-              className="font-display text-[2.2rem] sm:text-5xl lg:text-[3.4rem] font-semibold leading-[1.1] tracking-tight"
+              className="font-display text-[2rem] sm:text-5xl lg:text-[3.1rem] font-semibold leading-[1.1] tracking-tight"
               style={{ color: "white" }}
             >
-              Hai dolore da settimane?
-              <br />
-              <span style={{ color: "#5eead4" }}>È ora di risolverlo.</span>
+              Fisioterapista a Pontecorvo
+              <span className="block mt-1" style={{ color: "#5eead4" }}>
+                Risolvi mal di schiena, cervicale e dolori articolari
+              </span>
             </h1>
 
-            {/* Sub */}
-            <p
-              className="mt-4 text-base sm:text-lg leading-relaxed max-w-lg"
-              style={{ color: "rgba(255,255,255,0.68)" }}
-            >
-              Cervicale, schiena, spalla, ginocchio, sciatica. Trovo la causa
-              e costruisco il percorso più efficace per eliminarla — non solo tamponarla.
+            {/* Sottotitolo concreto, orientato al risultato */}
+            <p className="mt-5 text-base sm:text-lg leading-relaxed max-w-lg" style={{ color: "rgba(255,255,255,0.78)" }}>
+              Hai già provato massaggi, antidolorifici, riposo — e il dolore è ancora lì.
+              Il problema è che nessuno ha ancora trovato la causa vera.
+              Io parto da lì: <strong style={{ color: "white" }}>60 minuti di valutazione clinica approfondita</strong>,
+              diagnosi precisa, piano di trattamento su misura. Non protocolli. Non generalizzazioni.
             </p>
 
             {/* Bullets */}
@@ -69,128 +62,92 @@ export function Hero() {
               {bullets.map((b, i) => (
                 <li key={i} className="flex items-start gap-3">
                   <CheckCircle className="h-5 w-5 flex-shrink-0 mt-0.5" style={{ color: "#5eead4" }} />
-                  <span className="text-sm" style={{ color: "rgba(255,255,255,0.75)" }}>{b}</span>
+                  <span className="text-sm" style={{ color: "rgba(255,255,255,0.78)" }}>{b}</span>
                 </li>
               ))}
             </ul>
 
-            {/* Stars */}
-            <div className="mt-5 flex items-center gap-2.5">
+            {/* Stelle */}
+            <div className="mt-5 flex items-center gap-2.5 flex-wrap">
               <div className="flex">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-4 w-4 fill-current" style={{ color: "#5eead4" }} />
-                ))}
+                {[...Array(5)].map((_, i) => <Star key={i} className="h-4 w-4 fill-current" style={{ color: "#fbbf24" }} />)}
               </div>
-              <span className="text-xs sm:text-sm" style={{ color: "rgba(255,255,255,0.45)" }}>
-                Valutato 5/5 dai pazienti su Google
-              </span>
+              <a href="https://share.google/jJD2b5LPGadgOOZD1" target="_blank" rel="noopener noreferrer"
+                className="text-xs sm:text-sm hover:underline" style={{ color: "rgba(255,255,255,0.5)" }}>
+                5/5 su Google · Pontecorvo
+              </a>
             </div>
 
-            {/* CTAs — stacked on mobile, row on sm+ */}
+            {/* CTA primaria + WhatsApp */}
             <div className="mt-7 flex flex-col sm:flex-row gap-3">
-              <Button
-                asChild
-                size="lg"
-                className="font-semibold text-sm sm:text-base w-full sm:w-auto"
-                style={{ background: "#5eead4", color: "#0b2d2a" }}
-              >
+              <Button asChild size="lg" className="font-bold text-sm sm:text-base w-full sm:w-auto"
+                style={{ background: "#5eead4", color: "#0b2d2a" }}>
                 <Link href="/prenota" className="flex items-center justify-center gap-2">
-                  Prenota la prima valutazione
+                  👉 Prenota ora la tua prima valutazione
                   <ArrowRight className="h-5 w-5" />
                 </Link>
               </Button>
-
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="text-sm sm:text-base w-full sm:w-auto"
-                style={{
-                  borderColor: "rgba(255,255,255,0.25)",
-                  color: "white",
-                  background: "rgba(255,255,255,0.06)",
-                }}
-              >
-                <a
-                  href="https://wa.me/393209631792?text=Ciao%20Marco%2C%20ho%20bisogno%20di%20informazioni."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2"
-                >
-                  <MessageCircle className="h-5 w-5" />
-                  Scrivimi su WhatsApp
+              <Button asChild variant="outline" size="lg" className="text-sm sm:text-base w-full sm:w-auto"
+                style={{ borderColor: "rgba(255,255,255,0.25)", color: "white", background: "rgba(255,255,255,0.06)" }}>
+                <a href="https://wa.me/393209631792?text=Ciao%20Marco%2C%20ho%20bisogno%20di%20informazioni."
+                  target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
+                  <MessageCircle className="h-5 w-5" /> Scrivimi su WhatsApp
                 </a>
               </Button>
             </div>
 
-            <p className="mt-3 text-xs text-center sm:text-left" style={{ color: "rgba(255,255,255,0.3)" }}>
-              Prima visita circa 60 min · Nessun impegno
+            {/* CTA telefono + recensione */}
+            <div className="mt-4 flex flex-wrap gap-3 items-center">
+              <a href="tel:+393209631792"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full hover:opacity-80 transition-opacity"
+                style={{ background: "rgba(255,255,255,0.08)", border: "1px solid rgba(255,255,255,0.2)", color: "rgba(255,255,255,0.8)" }}>
+                <Phone className="h-3.5 w-3.5" /> 320 963 1792
+              </a>
+              <a href="https://g.page/r/Cb8BmfZRugb3EBM/review" target="_blank" rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full hover:opacity-80 transition-opacity"
+                style={{ background: "rgba(255,215,0,0.12)", border: "1px solid rgba(255,215,0,0.3)", color: "#fde68a" }}>
+                ⭐ Lascia una recensione su Google
+              </a>
+            </div>
+
+            <p className="mt-3 text-xs" style={{ color: "rgba(255,255,255,0.28)" }}>
+              Senza prescrizione medica · Prima visita circa 60 min · Nessun impegno
             </p>
           </div>
 
-          {/* ── Photo — hidden on mobile ── */}
+          {/* Foto */}
           <div className="relative hidden lg:block">
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl max-w-sm mx-auto">
-              <Image
-                src="/images/img-2314.jpeg"
-                alt="Dott. Marco Turchetta — Fisioterapista e Osteopata a Pontecorvo"
-                fill
-                className="object-cover object-top"
-                priority
-              />
-              <div
-                className="absolute inset-0"
-                style={{ background: "linear-gradient(to top, rgba(11,45,42,0.6) 0%, transparent 50%)" }}
-              />
+              <Image src="/images/img-2314.jpeg"
+                alt="Marco Turchetta fisioterapista e osteopata a Pontecorvo — specializzato in mal di schiena, cervicale e dolori articolari"
+                fill className="object-cover object-top" priority />
+              <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(11,45,42,0.6) 0%, transparent 50%)" }} />
             </div>
-
-            {/* Floating quote */}
-            <div
-              className="absolute -bottom-6 -left-8 p-5 rounded-xl max-w-[270px]"
-              style={{
-                background: "rgba(255,255,255,0.09)",
-                backdropFilter: "blur(16px)",
-                border: "1px solid rgba(255,255,255,0.15)",
-              }}
-            >
-              <p className="text-sm leading-relaxed italic" style={{ color: "rgba(255,255,255,0.82)" }}>
-                "Non mi accontento di toglierti il dolore. Voglio che tu capisca perché ce l'hai — e come non averlo più."
+            <div className="absolute -bottom-6 -left-8 p-5 rounded-xl max-w-[270px]"
+              style={{ background: "rgba(255,255,255,0.09)", backdropFilter: "blur(16px)", border: "1px solid rgba(255,255,255,0.15)" }}>
+              <p className="text-sm leading-relaxed italic" style={{ color: "rgba(255,255,255,0.85)" }}>
+                &quot;Se hai già provato tutto e il dolore è ancora lì, il problema non sei tu. È che la causa non è ancora stata trovata.&quot;
               </p>
-              <p className="mt-2 text-sm font-semibold" style={{ color: "#5eead4" }}>
-                — Marco Turchetta
-              </p>
+              <p className="mt-2 text-sm font-semibold" style={{ color: "#5eead4" }}>— Marco Turchetta</p>
             </div>
           </div>
-
         </div>
       </div>
 
       {/* Stats bar */}
-      <div
-        className="relative w-full"
-        style={{ background: "rgba(255,255,255,0.04)", borderTop: "1px solid rgba(255,255,255,0.08)" }}
-      >
+      <div className="relative w-full" style={{ background: "rgba(255,255,255,0.04)", borderTop: "1px solid rgba(255,255,255,0.08)" }}>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 sm:py-5">
           <div className="grid grid-cols-3 gap-2 sm:gap-8">
             {stats.map((s, i) => (
-              <div
-                key={i}
-                className={`text-center ${i > 0 ? "border-l" : ""}`}
-                style={{ borderColor: "rgba(255,255,255,0.1)" }}
-              >
-                <p className="font-display text-lg sm:text-2xl font-semibold leading-tight" style={{ color: "#5eead4" }}>
-                  {s.value}
-                </p>
-                <p className="mt-0.5 text-[10px] sm:text-sm leading-tight" style={{ color: "rgba(255,255,255,0.4)" }}>
-                  {s.label}
-                </p>
+              <div key={i} className={`text-center ${i > 0 ? "border-l" : ""}`} style={{ borderColor: "rgba(255,255,255,0.1)" }}>
+                <p className="font-display text-base sm:text-2xl font-semibold leading-tight" style={{ color: "#5eead4" }}>{s.value}</p>
+                <p className="mt-0.5 text-[10px] sm:text-xs leading-tight" style={{ color: "rgba(255,255,255,0.4)" }}>{s.label}</p>
               </div>
             ))}
           </div>
         </div>
       </div>
 
-      {/* Wave */}
       <div className="relative w-full overflow-hidden leading-none" style={{ height: 36 }}>
         <svg viewBox="0 0 1440 36" preserveAspectRatio="none" className="absolute bottom-0 w-full h-full">
           <path d="M0,0 C360,36 1080,36 1440,0 L1440,36 L0,36 Z" fill="var(--background)" />

@@ -9,6 +9,7 @@ const navLinks = [
   { href: "/#metodo", label: "Come Lavoro" },
   { href: "/#studio", label: "Studio" },
   { href: "/#contatti", label: "Contatti" },
+  { href: "/blog", label: "Blog" },
   { href: "/prenota", label: "Prenota Online" },
 ]
 
