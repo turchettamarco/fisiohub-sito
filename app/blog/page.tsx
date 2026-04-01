@@ -17,6 +17,7 @@ const posts = [
   { slug: 'laser-yag-come-funziona', title: 'Laser Nd:YAG: come funziona davvero e quando è indicato', excerpt: 'Non è il laser di un centro estetico. Spiegazione scientifica degli effetti biologici e delle indicazioni cliniche del laser Nd:YAG.', category: 'Tecnologie', date: '2026-03-12', color: 'bg-purple-50 text-purple-700 border-purple-200' },
   { slug: 'prima-visita-fisioterapista', title: 'Prima visita dal fisioterapista: cosa aspettarsi e come prepararsi', excerpt: 'Tutto quello che devi sapere prima della prima visita. Come prepararsi, cosa succede, cosa portare — senza sorprese.', category: 'Consigli', date: '2026-03-17', color: 'bg-blue-50 text-blue-700 border-blue-200' },
   { slug: 'osteopatia-viscerale-intestino', title: "Quando l'intestino fa male alla schiena: osteopatia viscerale spiegata", excerpt: "Il collegamento tra visceri e colonna vertebrale è reale. Come un colon irritato può causare lombalgia.", category: 'Osteopatia', date: '2026-03-22', color: 'bg-teal-50 text-teal-700 border-teal-200' },
+  { slug: 'acufeni-osteopatia', title: 'Acufeni e osteopatia cranica: quando quel ronzio ha una spiegazione meccanica', excerpt: 'Fischio o ronzio nell\'orecchio che non passa? In molti casi gli acufeni hanno una causa meccanica — cervicale, mandibola, cranio — che l\'osteopatia può trattare.', category: 'Osteopatia', date: '2026-03-26', color: 'bg-teal-50 text-teal-700 border-teal-200' },
 ]
 
 function formatDate(iso: string) {
