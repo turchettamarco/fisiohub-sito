@@ -4,7 +4,7 @@ import { ArrowRight, Phone } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'TENS a Pontecorvo | Elettroterapia Antalgica — Marco Turchetta',
-  description: 'TENS a Pontecorvo (FR). Elettroterapia antalgica per dolore cronico, nevralgie, artralgie e dolore post-operatorio. Studio fisioterapia Marco Turchetta, Via XXIV Maggio 6.',
+  description: 'TENS a Pontecorvo (FR). Elettroterapia antalgica per dolore cronico, nevralgie, artralgie e dolore post-operatorio. Studio fisioterapia Marco Turchetta, Via Galileo Galilei 5.',
   keywords: ['TENS Pontecorvo', 'elettroterapia Pontecorvo', 'tens fisioterapia Pontecorvo', 'dolore cronico Pontecorvo'],
   alternates: { canonical: 'https://turchettamarco.com/tens-pontecorvo' },
 }

@@ -134,7 +134,7 @@ export default function RootLayout({
                   "worksFor": { "@id": "https://turchettamarco.com/#business" },
                   "address": {
                     "@type": "PostalAddress",
-                    "streetAddress": "Via XXIV Maggio 6",
+                    "streetAddress": "Via Galileo Galilei 5",
                     "addressLocality": "Pontecorvo",
                     "addressRegion": "FR",
                     "postalCode": "03037",
@@ -157,7 +157,7 @@ export default function RootLayout({
                   "founder": { "@id": "https://turchettamarco.com/#person" },
                   "address": {
                     "@type": "PostalAddress",
-                    "streetAddress": "Via XXIV Maggio 6",
+                    "streetAddress": "Via Galileo Galilei 5",
                     "addressLocality": "Pontecorvo",
                     "addressRegion": "FR",
                     "postalCode": "03037",
@@ -185,7 +185,7 @@ export default function RootLayout({
                     "Terapia Manuale"
                   ],
                   "sameAs": [
-                    "https://www.google.com/maps/place/Via+XXIV+Maggio+6,+Pontecorvo"
+                    "https://www.google.com/maps/place/Via+Galileo+Galilei+5,+Pontecorvo"
                   ]
                 }
               ]

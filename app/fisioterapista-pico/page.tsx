@@ -21,7 +21,7 @@ export default function Page() {
           </p>
           <div className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
             <MapPin className="h-4 w-4 text-primary" />
-            Via XXIV Maggio 6, Pontecorvo (FR) — 9 km da Pico
+            Via Galileo Galilei 5, Pontecorvo (FR) — 9 km da Pico
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
             <Link href="/prenota" className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-semibold px-6 py-3 rounded-xl hover:opacity-90 transition-opacity">
@@ -81,7 +81,7 @@ export default function Page() {
 
           <div>
             <h2 className="font-display text-2xl sm:text-3xl font-semibold mb-4">Come raggiungermi da Pico</h2>
-            <p className="text-muted-foreground leading-relaxed">Via XXIV Maggio 6, Pontecorvo (FR). Da Pico si raggiunge in pochi minuti di auto. Parcheggio libero nelle immediate vicinanze. Lavoro esclusivamente su appuntamento — prenota online o chiamami al 320 963 1792.</p>
+            <p className="text-muted-foreground leading-relaxed">Via Galileo Galilei 5, Pontecorvo (FR). Da Pico si raggiunge in pochi minuti di auto. Parcheggio libero nelle immediate vicinanze. Lavoro esclusivamente su appuntamento — prenota online o chiamami al 320 963 1792.</p>
           </div>
         </div>
       </section>

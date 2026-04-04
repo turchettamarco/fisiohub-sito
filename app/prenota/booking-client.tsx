@@ -349,7 +349,7 @@ export function BookingClient() {
             <div className="bg-primary/5 border-2 border-primary/25 rounded-xl p-4 mb-4">
               <p className="text-xs font-bold text-primary uppercase tracking-wide mb-3">Riepilogo richiesta</p>
               {[["Servizio", SERVIZI[curServ].n], ["Data", selDay ? fmtDateLong(selDay) : ""], ["Ora", selSlot ?? ""],
-                ["Studio", "Via XXIV Maggio 6, Pontecorvo (FR)"], ["Paziente", nome], ["Telefono", tel]
+                ["Studio", "Via Galileo Galilei 5, Pontecorvo (FR)"], ["Paziente", nome], ["Telefono", tel]
               ].map(([label, value]) => (
                 <div key={label} className="flex justify-between items-start gap-4 py-2.5 border-b border-primary/10 last:border-0">
                   <span className="text-xs text-muted-foreground shrink-0">{label}</span>
@@ -393,7 +393,7 @@ export function BookingClient() {
               <p className="text-sm text-foreground leading-relaxed">
                 <strong>{SERVIZI[curServ].n}</strong><br />
                 {selDay && fmtDateLong(selDay)} · ore {selSlot}<br />
-                Via XXIV Maggio 6 · Pontecorvo (FR)<br />
+                Via Galileo Galilei 5 · Pontecorvo (FR)<br />
                 {nome} · {tel}
               </p>
               {bookingId && <p className="text-xs text-primary/50 mt-2">Ref. #{bookingId.slice(0,8).toUpperCase()}</p>}
