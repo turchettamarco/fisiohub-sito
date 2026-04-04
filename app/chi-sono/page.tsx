@@ -15,7 +15,7 @@ const faqs = [
   { q: 'Posso venire da Marco Turchetta senza prescrizione medica?', a: 'Sì. Non hai bisogno di nessuna ricetta. Puoi contattarmi direttamente — anche solo con un messaggio WhatsApp. Se dopo la valutazione capisco che non sono la figura più adatta per il tuo problema, te lo dico chiaramente e ti indico dove andare.' },
   { q: 'Quanto costa una visita da Marco Turchetta?', a: 'Il costo varia in base al tipo di trattamento. Te lo comunico prima di iniziare qualsiasi percorso — nessuna sorpresa. La trasparenza sui costi fa parte del mio modo di lavorare.' },
   { q: 'Marco Turchetta fa anche osteopatia viscerale?', a: 'Sì. Ho una formazione specifica in osteopatia strutturale, viscerale e cranio-sacrale attraverso il percorso EOM (Master universitario + Diploma D.O. in completamento). Tratto anche lombalgie di origine viscerale e sequele di cicatrici chirurgiche addominali.' },
-  { q: 'Devo spostarmida lontano per venire a Pontecorvo?', a: 'Lo studio è a Pontecorvo (FR), in Via Galileo Galilei 5 — posizione centrale rispetto a tutta la Valle del Liri. Da Cassino sono 15 km, da Aquino 8 km, da Ceprano 10 km, da Arce 12 km. Parcheggio libero nelle immediate vicinanze.' },
+  { q: 'Devo spostarmida lontano per venire a Pontecorvo?', a: 'Lo studio è a Pontecorvo (FR), in Via XXIV Maggio 6 — posizione centrale rispetto a tutta la Valle del Liri. Da Cassino sono 15 km, da Aquino 8 km, da Ceprano 10 km, da Arce 12 km. Parcheggio libero nelle immediate vicinanze.' },
 ]
 
 export default function ChiSono() {
@@ -28,7 +28,7 @@ export default function ChiSono() {
     "url": "https://turchettamarco.com",
     "telephone": "+393209631792",
     "email": "turchettamarco@gmail.com",
-    "address": { "@type": "PostalAddress", "streetAddress": "Via Galileo Galilei 5", "addressLocality": "Pontecorvo", "addressRegion": "FR", "postalCode": "03037", "addressCountry": "IT" },
+    "address": { "@type": "PostalAddress", "streetAddress": "Via XXIV Maggio 6", "addressLocality": "Pontecorvo", "addressRegion": "FR", "postalCode": "03037", "addressCountry": "IT" },
     "alumniOf": [
       { "@type": "CollegeOrUniversity", "name": "Sapienza Università di Roma — polo IRCCS Neuromed di Pozzilli" },
       { "@type": "CollegeOrUniversity", "name": "Università degli Studi di Verona — EOM European Osteopathic Academy" }
@@ -184,7 +184,7 @@ export default function ChiSono() {
           <div>
             <h2 className="font-display text-2xl sm:text-3xl font-semibold mb-4">Il mio studio a Pontecorvo</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Via Galileo Galilei 5, Pontecorvo (FR) — presso gli Studi Galileo.
+              Via XXIV Maggio 6, Pontecorvo (FR).
               Uno spazio privato, attrezzato con strumentazione medicale professionale:
               laser Nd:YAG Zaira (Garda Laser, Made in Italy), tecarterapia Globus Diacare 5000,
               TENS Globus, ultrasuoni, magnetoterapia a noleggio domiciliare.

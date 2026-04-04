@@ -170,7 +170,7 @@ export default function FisioterapiaPontecorvo() {
           <div>
             <h2 className="font-display text-2xl sm:text-3xl font-semibold mb-4">Servo tutta la Valle del Liri — non solo Pontecorvo</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Lo studio è in Via Galileo Galilei 5, Pontecorvo (FR) — posizione centrale
+              Lo studio è in Via XXIV Maggio 6, Pontecorvo (FR) — posizione centrale
               rispetto a tutta la Valle del Liri e alla Ciociaria meridionale.
             </p>
             <div className="flex flex-wrap gap-2">

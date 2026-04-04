@@ -6,19 +6,16 @@ import type { Metadata } from 'next'
 import { DM_Sans, Fraunces } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
-
 const dmSans = DM_Sans({
   subsets: ["latin"],
   variable: "--font-sans-var",
   display: "swap",
 })
-
 const fraunces = Fraunces({
   subsets: ["latin"],
   variable: "--font-display-var",
   display: "swap",
 })
-
 export const metadata: Metadata = {
   title: 'Marco Turchetta | Fisioterapista e Osteopata a Pontecorvo (FR)',
   description: 'Fisioterapista e osteopata a Pontecorvo (FR). Trattamento mal di schiena, cervicale, sciatalgia, spalla e ginocchio. Laser Nd:YAG, tecarterapia, osteopatia. Prenota online. Serve anche Cassino, Frosinone, Sora, Ceprano.',
@@ -110,7 +107,6 @@ export const metadata: Metadata = {
     apple: '/apple-icon.png',
   },
 }
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -125,43 +121,73 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "MedicalBusiness",
-              "name": "Marco Turchetta - Fisioterapia e Osteopatia",
-              "image": "https://turchettamarco.com/images/img-2314.jpeg",
-              "url": "https://turchettamarco.com",
-              "telephone": "+393209631792",
-              "email": "turchettamarco@gmail.com",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Via Galileo Galilei 5",
-                "addressLocality": "Pontecorvo",
-                "addressRegion": "FR",
-                "postalCode": "03037",
-                "addressCountry": "IT"
-              },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": 41.4597,
-                "longitude": 13.6696
-              },
-              "openingHoursSpecification": [
+              "@graph": [
                 {
-                  "@type": "OpeningHoursSpecification",
-                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-                  "opens": "09:00",
-                  "closes": "19:00"
+                  "@type": "Person",
+                  "@id": "https://turchettamarco.com/#person",
+                  "name": "Marco Turchetta",
+                  "jobTitle": "Fisioterapista e Osteopata",
+                  "url": "https://turchettamarco.com",
+                  "image": "https://turchettamarco.com/images/img-2314.jpeg",
+                  "telephone": "+393209631792",
+                  "email": "turchettamarco@gmail.com",
+                  "worksFor": { "@id": "https://turchettamarco.com/#business" },
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Via XXIV Maggio 6",
+                    "addressLocality": "Pontecorvo",
+                    "addressRegion": "FR",
+                    "postalCode": "03037",
+                    "addressCountry": "IT"
+                  },
+                  "sameAs": [
+                    "https://www.facebook.com/profile.php?id=61580145238983",
+                    "https://www.instagram.com/fisioterapia_turchetta_marco",
+                    "https://www.linkedin.com/in/marcoturchetta-fisioterapista"
+                  ]
+                },
+                {
+                  "@type": "MedicalBusiness",
+                  "@id": "https://turchettamarco.com/#business",
+                  "name": "Marco Turchetta Fisioterapia e Osteopatia",
+                  "image": "https://turchettamarco.com/images/img-2314.jpeg",
+                  "url": "https://turchettamarco.com",
+                  "telephone": "+393209631792",
+                  "email": "turchettamarco@gmail.com",
+                  "founder": { "@id": "https://turchettamarco.com/#person" },
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Via XXIV Maggio 6",
+                    "addressLocality": "Pontecorvo",
+                    "addressRegion": "FR",
+                    "postalCode": "03037",
+                    "addressCountry": "IT"
+                  },
+                  "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 41.4597,
+                    "longitude": 13.6696
+                  },
+                  "openingHoursSpecification": [
+                    {
+                      "@type": "OpeningHoursSpecification",
+                      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+                      "opens": "09:00",
+                      "closes": "19:00"
+                    }
+                  ],
+                  "priceRange": "€€",
+                  "description": "Fisioterapista e osteopata a Pontecorvo (FR). Trattamento del dolore muscolo-scheletrico con approccio clinico integrato. Laser Nd:YAG Zaira, tecarterapia Globus Diacare 5000, osteopatia, bendaggio funzionale.",
+                  "medicalSpecialty": [
+                    "Fisioterapia",
+                    "Osteopatia",
+                    "Riabilitazione Ortopedica",
+                    "Terapia Manuale"
+                  ],
+                  "sameAs": [
+                    "https://www.google.com/maps/place/Via+XXIV+Maggio+6,+Pontecorvo"
+                  ]
                 }
-              ],
-              "priceRange": "€€",
-              "description": "Fisioterapista e osteopata a Pontecorvo (FR). Trattamento del dolore muscolo-scheletrico con approccio clinico integrato. Laser Nd:YAG Zaira, tecarterapia Globus Diacare 5000, osteopatia, bendaggio funzionale.",
-              "medicalSpecialty": [
-                "Fisioterapia",
-                "Osteopatia",
-                "Riabilitazione Ortopedica",
-                "Terapia Manuale"
-              ],
-              "sameAs": [
-                "https://www.google.com/maps/place/Via+Galileo+Galilei+5,+Pontecorvo"
               ]
             })
           }}

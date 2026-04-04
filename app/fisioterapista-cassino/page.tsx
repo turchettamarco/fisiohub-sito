@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { ArrowRight, Phone, MapPin } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Fisioterapista Cassino | Marco Turchetta — Studio a Pontecorvo (FR)',
-  description: 'Fisioterapista vicino a Cassino. Marco Turchetta, studio di fisioterapia e osteopatia a Pontecorvo (FR), 15 km da Pontecorvo. Mal di schiena, cervicale, laser terapia, tecar. Prenota.',
+  description: 'Fisioterapista vicino a Cassino. Marco Turchetta, studio di fisioterapia e osteopatia a Pontecorvo (FR), 15 km da Cassino. Mal di schiena, cervicale, laser terapia, tecar. Prenota.',
   keywords: ['fisioterapista Cassino', 'fisioterapia Cassino', 'osteopata Cassino', 'fisioterapia vicino Cassino'],
   alternates: { canonical: 'https://turchettamarco.com/fisioterapista-cassino' },
 }
@@ -15,11 +15,11 @@ export default function Page() {
           <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-4">Fisioterapista vicino a Cassino</p>
           <h1 className="font-display text-4xl sm:text-5xl font-semibold leading-tight mb-6">Fisioterapista a Cassino</h1>
           <p className="text-lg text-muted-foreground leading-relaxed mb-4 max-w-2xl">
-            Cerchi un fisioterapista vicino a Cassino? Il mio studio di fisioterapia e osteopatia si trova a Pontecorvo (FR), a soli 15 km da Pontecorvo. Un percorso breve per accedere a un servizio clinico di qualità — valutazione approfondita, terapia manuale, laser Nd:YAG, tecarterapia e osteopatia.
+            Cerchi un fisioterapista vicino a Cassino? Il mio studio di fisioterapia e osteopatia si trova a Pontecorvo (FR), a soli 15 km da Cassino. Un percorso breve per accedere a un servizio clinico di qualità — valutazione approfondita, terapia manuale, laser Nd:YAG, tecarterapia e osteopatia.
           </p>
           <div className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
             <MapPin className="h-4 w-4 text-primary" />
-            Via Galileo Galilei 5, Pontecorvo (FR) — 15 km da Pontecorvo
+            Via XXIV Maggio 6, Pontecorvo (FR) — 15 km da Cassino
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
             <Link href="/prenota" className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-semibold px-6 py-3 rounded-xl hover:opacity-90 transition-opacity">Prenota <ArrowRight className="h-4 w-4" /></Link>
@@ -44,7 +44,7 @@ export default function Page() {
           <div>
             <h2 className="font-display text-2xl sm:text-3xl font-semibold mb-4">Come raggiungere lo studio da Cassino</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Lo studio è in Via Galileo Galilei 5, Pontecorvo (FR), presso gli Studi Galileo. Parcheggio libero nelle vicinanze. Lavoro su appuntamento — prenota online o chiamami direttamente.
+              Lo studio è in Via XXIV Maggio 6, Pontecorvo (FR). Parcheggio libero nelle vicinanze. Lavoro su appuntamento — prenota online o chiamami direttamente.
             </p>
           </div>
         </div>

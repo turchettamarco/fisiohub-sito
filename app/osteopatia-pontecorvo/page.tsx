@@ -147,7 +147,7 @@ export default function OsteopatiaPontecorvo() {
               Dove si trova lo studio
             </h2>
             <p className="text-muted-foreground leading-relaxed">
-              Lo studio è a Pontecorvo, in Via Galileo Galilei 5, presso gli Studi Galileo.
+              Lo studio è a Pontecorvo, in Via XXIV Maggio 6.
               Facilmente raggiungibile da Ceprano, Arce, Aquino, Cassino, San Giorgio a Liri
               e Sant'Elia Fiumerapido. Parcheggio disponibile nelle immediate vicinanze.
               Lavoro su appuntamento — prenota online o scrivimi su WhatsApp.

@@ -19,7 +19,7 @@ export default function Page() {
           </p>
           <div className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
             <MapPin className="h-4 w-4 text-primary" />
-            Via Galileo Galilei 5, Pontecorvo (FR) — 10 km da Pontecorvo
+            Via XXIV Maggio 6, Pontecorvo (FR) — 10 km da Pontecorvo
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
             <Link href="/prenota" className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-semibold px-6 py-3 rounded-xl hover:opacity-90 transition-opacity">Prenota <ArrowRight className="h-4 w-4" /></Link>
@@ -44,7 +44,7 @@ export default function Page() {
           <div>
             <h2 className="font-display text-2xl sm:text-3xl font-semibold mb-4">Come raggiungere lo studio da Ceprano</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Lo studio è in Via Galileo Galilei 5, Pontecorvo (FR), presso gli Studi Galileo. Parcheggio libero nelle vicinanze. Lavoro su appuntamento — prenota online o chiamami direttamente.
+              Lo studio è in Via XXIV Maggio 6, Pontecorvo (FR). Parcheggio libero nelle vicinanze. Lavoro su appuntamento — prenota online o chiamami direttamente.
             </p>
           </div>
         </div>
