@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, Phone } from 'lucide-react'
+import { ArrowRight, Phone } from 'lucide-react'
+import { BlogLinks } from '@/components/blog/blog-links'
 export const metadata: Metadata = {
   title: 'Fisioterapia Sportiva a Pontecorvo | Infortuni Sport — Marco Turchetta',
   description: 'Fisioterapia sportiva a Pontecorvo (FR). Trattamento e prevenzione degli infortuni sportivi. Distorsioni, strappi, tendiniti, recupero atletico. Marco Turchetta fisioterapista. Prenota.',
@@ -33,6 +34,8 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <BlogLinks slugs={['dolore-ginocchio-cosa-fare', 'dolore-spalla-riconoscere']} />
+
       <section className="py-16 bg-primary/5 border-t border-primary/20">
         <div className="mx-auto max-w-2xl px-5 sm:px-8 text-center">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold mb-4">Sei uno sportivo con un infortunio a Pontecorvo?</h2>

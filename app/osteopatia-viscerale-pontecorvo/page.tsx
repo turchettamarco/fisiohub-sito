@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, Phone, CheckCircle } from 'lucide-react'
+import { ArrowRight, Phone, CheckCircle } from 'lucide-react'
+import { BlogLinks } from '@/components/blog/blog-links'
 
 export const metadata: Metadata = {
   title: 'Osteopatia Viscerale a Pontecorvo | Reflusso, Colon Irritabile — Marco Turchetta',
@@ -116,6 +117,8 @@ export default function OsteopatiaVisceralePontecorvo() {
 
         </div>
       </section>
+
+      <BlogLinks slugs={['reflusso-diaframma-dorsalgia', 'osteopatia-viscerale-intestino', 'stress-sistema-neurovegetativo']} />
 
       <section className="py-16 bg-primary/5 border-t border-primary/20">
         <div className="mx-auto max-w-2xl px-5 sm:px-8 text-center">

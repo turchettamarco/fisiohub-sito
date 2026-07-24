@@ -1,12 +1,21 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, Calendar, User } from 'lucide-react'
+import { ArrowRight, Calendar, User } from 'lucide-react'
+import { ArticleExtras } from '@/components/blog/article-extras'
 
 export const metadata: Metadata = {
   title: 'Cervicale: 5 Errori che Peggiorano il Dolore | Marco Turchetta Pontecorvo',
   description: 'I 5 errori più comuni con il dolore cervicale. Cosa evitare e cosa fare invece, spiegato da Marco Turchetta fisioterapista e osteopata a Pontecorvo (FR).',
   keywords: ['cervicale errori', 'cervicalgia peggiora', 'dolore cervicale cosa non fare', 'cervicale fisioterapista Pontecorvo'],
-  alternates: { canonical: 'https://turchettamarco.com/blog/cervicale-errori' },
+  alternates: { canonical: 'https://turchettamarco.com/blog/cervicale-errori' },
+  openGraph: {
+    type: 'article',
+    title: 'Cervicale: 5 Errori che Peggiorano il Dolore | Marco Turchetta Pontecorvo',
+    description: 'I 5 errori più comuni con il dolore cervicale. Cosa evitare e cosa fare invece, spiegato da Marco Turchetta fisioterapista e osteopata a Pontecorvo (FR).',
+    url: 'https://turchettamarco.com/blog/cervicale-errori',
+    siteName: 'Marco Turchetta Fisioterapia e Osteopatia',
+    locale: 'it_IT',
+  },
 }
 
 export default function Post() {
@@ -117,6 +126,8 @@ export default function Post() {
               Cervicale a Pontecorvo →
             </Link>
           </div>
+          <ArticleExtras slug="cervicale-errori" />
+
           <div className="pt-8 border-t border-border">
             <Link href="/blog" className="text-sm text-muted-foreground hover:text-primary transition-colors">← Torna al blog</Link>
           </div>

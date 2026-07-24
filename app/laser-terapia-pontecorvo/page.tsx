@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
+import { BlogLinks } from '@/components/blog/blog-links'
 
 export const metadata: Metadata = {
   title: 'Laser Terapia a Pontecorvo | Studio Marco Turchetta',
@@ -45,6 +46,8 @@ export default function LaserTerapiaPontecorvo() {
           </div>
         </div>
       </section>
+      <BlogLinks slugs={['laser-yag-come-funziona']} />
+
       <section className="py-16 bg-primary/5 border-t border-primary/20">
         <div className="mx-auto max-w-2xl px-5 sm:px-8 text-center">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-foreground mb-4">Prenota una seduta di laser terapia a Pontecorvo</h2>

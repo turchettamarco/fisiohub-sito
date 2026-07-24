@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, Phone, AlertCircle, CheckCircle, MessageCircle } from 'lucide-react'
+import { ArrowRight, Phone, AlertCircle, CheckCircle, MessageCircle } from 'lucide-react'
+import { BlogLinks } from '@/components/blog/blog-links'
 
 export const metadata: Metadata = {
   title: 'Mal di Schiena a Pontecorvo | Fisioterapia e Osteopatia — Marco Turchetta',
@@ -263,6 +264,8 @@ export default function MalDiSchienaPontecorvo() {
       </section>
 
       {/* CTA FINALE */}
+      <BlogLinks slugs={['colpo-della-strega-72-ore', 'mal-di-schiena-cause', 'mal-di-schiena-quando-preoccuparsi']} />
+
       <section className="py-16 sm:py-20 bg-card border-t border-border">
         <div className="mx-auto max-w-2xl px-5 sm:px-8 text-center">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold mb-3">

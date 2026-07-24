@@ -1,12 +1,21 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, Calendar, User } from 'lucide-react'
+import { ArrowRight, Calendar, User } from 'lucide-react'
+import { ArticleExtras } from '@/components/blog/article-extras'
 
 export const metadata: Metadata = {
   title: 'Intestino e Mal di Schiena: Osteopatia Viscerale Spiegata | Marco Turchetta',
   description: 'Il collegamento tra intestino e lombalgia è reale. Come l\'osteopatia viscerale tratta le disfunzioni viscerali che causano dolore alla schiena. Marco Turchetta osteopata Pontecorvo.',
   keywords: ['osteopatia viscerale intestino', 'mal di schiena intestino', 'colon irritabile lombalgia', 'osteopatia viscerale Pontecorvo', 'disfunzione viscerale'],
-  alternates: { canonical: 'https://turchettamarco.com/blog/osteopatia-viscerale-intestino' },
+  alternates: { canonical: 'https://turchettamarco.com/blog/osteopatia-viscerale-intestino' },
+  openGraph: {
+    type: 'article',
+    title: 'Intestino e Mal di Schiena: Osteopatia Viscerale Spiegata | Marco Turchetta',
+    description: 'Il collegamento tra intestino e lombalgia è reale. Come l\'osteopatia viscerale tratta le disfunzioni viscerali che causano dolore alla schiena. Marco Turchetta osteopata Pontecorvo.',
+    url: 'https://turchettamarco.com/blog/osteopatia-viscerale-intestino',
+    siteName: 'Marco Turchetta Fisioterapia e Osteopatia',
+    locale: 'it_IT',
+  },
 }
 
 export default function Post() {
@@ -74,6 +83,8 @@ export default function Post() {
               Osteopatia viscerale a Pontecorvo →
             </Link>
           </div>
+
+          <ArticleExtras slug="osteopatia-viscerale-intestino" />
 
           <div className="pt-8 border-t border-border">
             <Link href="/blog" className="text-sm text-muted-foreground hover:text-primary transition-colors">← Torna al blog</Link>

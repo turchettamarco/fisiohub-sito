@@ -1,12 +1,21 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, Calendar, User, AlertCircle } from 'lucide-react'
+import { ArrowRight, Calendar, User, AlertCircle } from 'lucide-react'
+import { ArticleExtras } from '@/components/blog/article-extras'
 
 export const metadata: Metadata = {
   title: 'Dolore al Ginocchio: Cosa Fare Subito (e Cosa Evitare) | Marco Turchetta',
   description: 'Ginocchio gonfio, dolore sulle scale, scatto quando ti alzi. Cosa fare nelle prime 48 ore, quando andare dal fisioterapista e cosa assolutamente evitare. Marco Turchetta Pontecorvo.',
   keywords: ['dolore ginocchio cosa fare', 'ginocchio gonfio rimedi', 'dolore ginocchio fisioterapista', 'dolore ginocchio Pontecorvo', 'riabilitazione ginocchio Pontecorvo'],
-  alternates: { canonical: 'https://turchettamarco.com/blog/dolore-ginocchio-cosa-fare' },
+  alternates: { canonical: 'https://turchettamarco.com/blog/dolore-ginocchio-cosa-fare' },
+  openGraph: {
+    type: 'article',
+    title: 'Dolore al Ginocchio: Cosa Fare Subito (e Cosa Evitare) | Marco Turchetta',
+    description: 'Ginocchio gonfio, dolore sulle scale, scatto quando ti alzi. Cosa fare nelle prime 48 ore, quando andare dal fisioterapista e cosa assolutamente evitare. Marco Turchetta Pontecorvo.',
+    url: 'https://turchettamarco.com/blog/dolore-ginocchio-cosa-fare',
+    siteName: 'Marco Turchetta Fisioterapia e Osteopatia',
+    locale: 'it_IT',
+  },
 }
 
 export default function Post() {
@@ -168,6 +177,8 @@ export default function Post() {
               Dolore al ginocchio a Pontecorvo →
             </Link>
           </div>
+          <ArticleExtras slug="dolore-ginocchio-cosa-fare" />
+
           <div className="pt-8 border-t border-border">
             <Link href="/blog" className="text-sm text-muted-foreground hover:text-primary transition-colors">← Torna al blog</Link>
           </div>

@@ -1,12 +1,21 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, Calendar, User } from 'lucide-react'
+import { ArrowRight, Calendar, User } from 'lucide-react'
+import { ArticleExtras } from '@/components/blog/article-extras'
 
 export const metadata: Metadata = {
   title: 'Laser Nd:YAG: Come Funziona e Quando È Indicato | Marco Turchetta',
   description: 'Come funziona davvero il laser Nd:YAG in fisioterapia. Effetti biologici, indicazioni cliniche e differenze rispetto ad altri laser. Marco Turchetta fisioterapista Pontecorvo.',
   keywords: ['laser Nd:YAG fisioterapia', 'laser terapia come funziona', 'laser Zaira', 'laserterapia indicazioni', 'laser terapia Pontecorvo'],
-  alternates: { canonical: 'https://turchettamarco.com/blog/laser-yag-come-funziona' },
+  alternates: { canonical: 'https://turchettamarco.com/blog/laser-yag-come-funziona' },
+  openGraph: {
+    type: 'article',
+    title: 'Laser Nd:YAG: Come Funziona e Quando È Indicato | Marco Turchetta',
+    description: 'Come funziona davvero il laser Nd:YAG in fisioterapia. Effetti biologici, indicazioni cliniche e differenze rispetto ad altri laser. Marco Turchetta fisioterapista Pontecorvo.',
+    url: 'https://turchettamarco.com/blog/laser-yag-come-funziona',
+    siteName: 'Marco Turchetta Fisioterapia e Osteopatia',
+    locale: 'it_IT',
+  },
 }
 
 export default function Post() {
@@ -98,6 +107,8 @@ export default function Post() {
               Laser YAG a Pontecorvo →
             </Link>
           </div>
+
+          <ArticleExtras slug="laser-yag-come-funziona" />
 
           <div className="pt-8 border-t border-border">
             <Link href="/blog" className="text-sm text-muted-foreground hover:text-primary transition-colors">← Torna al blog</Link>

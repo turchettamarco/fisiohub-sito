@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, Phone, CheckCircle, AlertCircle, MessageCircle } from 'lucide-react'
+import { ArrowRight, Phone, CheckCircle, AlertCircle, MessageCircle } from 'lucide-react'
+import { BlogLinks } from '@/components/blog/blog-links'
 
 export const metadata: Metadata = {
   title: 'Dolore al Ginocchio a Pontecorvo | Fisioterapia — Marco Turchetta',
@@ -111,6 +112,8 @@ export default function DoloreGinocchioPontecorvo() {
           </div>
         </div>
       </section>
+
+      <BlogLinks slugs={['dolore-ginocchio-cosa-fare']} />
 
       <section className="py-16 bg-card border-t border-border">
         <div className="mx-auto max-w-2xl px-5 sm:px-8 text-center">

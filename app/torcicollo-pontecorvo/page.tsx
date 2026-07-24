@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, Phone } from 'lucide-react'
+import { ArrowRight, Phone } from 'lucide-react'
+import { BlogLinks } from '@/components/blog/blog-links'
 export const metadata: Metadata = {
   title: 'Torcicollo a Pontecorvo | Colpo di Frusta — Marco Turchetta',
   description: 'Torcicollo acuto e colpo di frusta a Pontecorvo (FR). Sblocco rapido con terapia manuale. Marco Turchetta fisioterapista e osteopata. Prenota.',
@@ -36,6 +37,8 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <BlogLinks slugs={['cervicale-errori', 'cefalea-cervicogenica']} />
+
       <section className="py-16 bg-primary/5 border-t border-primary/20">
         <div className="mx-auto max-w-2xl px-5 sm:px-8 text-center">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold mb-4">Hai il torcicollo a Pontecorvo?</h2>

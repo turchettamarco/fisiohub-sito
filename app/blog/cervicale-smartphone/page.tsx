@@ -1,12 +1,21 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, Calendar, User } from 'lucide-react'
+import { ArrowRight, Calendar, User } from 'lucide-react'
+import { ArticleExtras } from '@/components/blog/article-extras'
 
 export const metadata: Metadata = {
   title: 'Cervicale e Smartphone: il Text Neck Spiegato | Marco Turchetta',
   description: 'Perché il dolore cervicale è esploso negli ultimi 10 anni. Il "text neck" e le posture scorrette da smartphone spiegati da Marco Turchetta, fisioterapista a Pontecorvo (FR).',
   keywords: ['cervicale smartphone', 'text neck', 'dolore collo smartphone', 'cervicalgia postura', 'cervicale Pontecorvo'],
-  alternates: { canonical: 'https://turchettamarco.com/blog/cervicale-smartphone' },
+  alternates: { canonical: 'https://turchettamarco.com/blog/cervicale-smartphone' },
+  openGraph: {
+    type: 'article',
+    title: 'Cervicale e Smartphone: il Text Neck Spiegato | Marco Turchetta',
+    description: 'Perché il dolore cervicale è esploso negli ultimi 10 anni. Il "text neck" e le posture scorrette da smartphone spiegati da Marco Turchetta, fisioterapista a Pontecorvo (FR).',
+    url: 'https://turchettamarco.com/blog/cervicale-smartphone',
+    siteName: 'Marco Turchetta Fisioterapia e Osteopatia',
+    locale: 'it_IT',
+  },
 }
 
 export default function Post() {
@@ -108,6 +117,8 @@ export default function Post() {
               Cervicale a Pontecorvo →
             </Link>
           </div>
+
+          <ArticleExtras slug="cervicale-smartphone" />
 
           <div className="pt-8 border-t border-border">
             <Link href="/blog" className="text-sm text-muted-foreground hover:text-primary transition-colors">← Torna al blog</Link>

@@ -1,12 +1,21 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, Calendar, User } from 'lucide-react'
+import { ArrowRight, Calendar, User } from 'lucide-react'
+import { ArticleExtras } from '@/components/blog/article-extras'
 
 export const metadata: Metadata = {
   title: 'Prima Visita dal Fisioterapista: Cosa Aspettarsi | Marco Turchetta',
   description: 'Tutto quello che devi sapere prima della prima visita fisioterapica. Come prepararsi, cosa succede, cosa portare. Marco Turchetta fisioterapista e osteopata a Pontecorvo (FR).',
   keywords: ['prima visita fisioterapista', 'prima seduta fisioterapia', 'fisioterapista prima volta', 'valutazione fisioterapica'],
-  alternates: { canonical: 'https://turchettamarco.com/blog/prima-visita-fisioterapista' },
+  alternates: { canonical: 'https://turchettamarco.com/blog/prima-visita-fisioterapista' },
+  openGraph: {
+    type: 'article',
+    title: 'Prima Visita dal Fisioterapista: Cosa Aspettarsi | Marco Turchetta',
+    description: 'Tutto quello che devi sapere prima della prima visita fisioterapica. Come prepararsi, cosa succede, cosa portare. Marco Turchetta fisioterapista e osteopata a Pontecorvo (FR).',
+    url: 'https://turchettamarco.com/blog/prima-visita-fisioterapista',
+    siteName: 'Marco Turchetta Fisioterapia e Osteopatia',
+    locale: 'it_IT',
+  },
 }
 
 export default function Post() {
@@ -89,6 +98,8 @@ export default function Post() {
               Prenota la prima visita <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
+
+          <ArticleExtras slug="prima-visita-fisioterapista" />
 
           <div className="pt-8 border-t border-border">
             <Link href="/blog" className="text-sm text-muted-foreground hover:text-primary transition-colors">← Torna al blog</Link>

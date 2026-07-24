@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, Phone } from 'lucide-react'
+import { ArrowRight, Phone } from 'lucide-react'
+import { BlogLinks } from '@/components/blog/blog-links'
 export const metadata: Metadata = {
   title: 'Disfunzione ATM a Pontecorvo | Dolore Mandibola, Bruxismo — Marco Turchetta',
   description: 'Disfunzione dell\'articolazione temporo-mandibolare a Pontecorvo (FR). Dolore mandibola, click, bruxismo. Marco Turchetta fisioterapista e osteopata. Prenota.',
@@ -35,6 +36,8 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <BlogLinks slugs={['atm-bruxismo-mal-di-testa', 'acufeni-osteopatia']} />
+
       <section className="py-16 bg-primary/5 border-t border-primary/20">
         <div className="mx-auto max-w-2xl px-5 sm:px-8 text-center">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold mb-4">Hai dolore alla mandibola o disfunzione ATM a Pontecorvo?</h2>

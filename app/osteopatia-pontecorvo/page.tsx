@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, Phone } from 'lucide-react'
+import { ArrowRight, Phone } from 'lucide-react'
+import { BlogLinks } from '@/components/blog/blog-links'
 
 export const metadata: Metadata = {
   title: 'Osteopata a Pontecorvo | Marco Turchetta Osteopatia',
@@ -156,6 +157,8 @@ export default function OsteopatiaPontecorvo() {
 
         </div>
       </section>
+
+      <BlogLinks slugs={['stress-sistema-neurovegetativo', 'reflusso-diaframma-dorsalgia', 'osteopatia-viscerale-intestino']} />
 
       <section className="py-16 bg-primary/5 border-t border-primary/20">
         <div className="mx-auto max-w-2xl px-5 sm:px-8 text-center">

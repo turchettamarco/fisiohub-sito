@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, Phone, CheckCircle } from 'lucide-react'
+import { ArrowRight, Phone, CheckCircle } from 'lucide-react'
+import { BlogLinks } from '@/components/blog/blog-links'
 
 export const metadata: Metadata = {
   title: 'Sciatalgia a Pontecorvo | Lombalgia e Dolore Lombare — Marco Turchetta',
@@ -113,6 +114,8 @@ export default function SciatalgiaPage() {
 
         </div>
       </section>
+
+      <BlogLinks slugs={['sciatalgia-o-piriforme', 'colpo-della-strega-72-ore']} />
 
       <section className="py-16 bg-primary/5 border-t border-primary/20">
         <div className="mx-auto max-w-2xl px-5 sm:px-8 text-center">

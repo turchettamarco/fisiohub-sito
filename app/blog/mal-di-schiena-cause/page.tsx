@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, Calendar, User } from 'lucide-react'
+import { ArrowRight, Calendar, User } from 'lucide-react'
+import { ArticleExtras } from '@/components/blog/article-extras'
 
 export const metadata: Metadata = {
   title: 'Mal di Schiena: le 5 Cause Più Frequenti | Blog Marco Turchetta',
@@ -122,6 +123,8 @@ Come si tratta: è la condizione che risponde meglio al Metodo Mézières e all'
               Approfondisci: mal di schiena a Pontecorvo
             </Link>
           </div>
+
+          <ArticleExtras slug="mal-di-schiena-cause" />
 
           <div className="pt-8 border-t border-border">
             <Link href="/blog" className="text-sm text-muted-foreground hover:text-primary transition-colors">

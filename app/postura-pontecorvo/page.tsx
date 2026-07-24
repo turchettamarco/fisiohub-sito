@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, Phone } from 'lucide-react'
+import { ArrowRight, Phone } from 'lucide-react'
+import { BlogLinks } from '@/components/blog/blog-links'
 export const metadata: Metadata = {
   title: 'Postura a Pontecorvo | Rieducazione Posturale — Marco Turchetta',
   description: 'Postura scorretta e rieducazione posturale a Pontecorvo (FR). Valutazione posturale globale, Metodo Mézières, esercizi specifici. Marco Turchetta fisioterapista. Prenota.',
@@ -34,6 +35,8 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <BlogLinks slugs={['cervicale-smartphone', 'stress-sistema-neurovegetativo']} />
+
       <section className="py-16 bg-primary/5 border-t border-primary/20">
         <div className="mx-auto max-w-2xl px-5 sm:px-8 text-center">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold mb-4">Vuoi migliorare la tua postura a Pontecorvo?</h2>
